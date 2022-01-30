@@ -26,7 +26,7 @@
                     $day_of_week = str_replace(array_keys($days), array_values($days), $day_of_week);
 
                     if ($timenow > $giventime) {
-                        $time_difference = $timenow - $giventime - 7200;
+                        $time_difference = $timenow - $giventime - 7200; // 7200 = 2 timmar
 
                         // Hur mycket tid (timmar, minuter, sekunder) det finns kvar
                         $time_passed = date("G i s", $time_difference);
@@ -39,7 +39,7 @@
                         
                         print("Datumet var " . $day_of_week . ". Det har gott " . $days_passed . " dygn, " . $time_passed[0] . " timmar, " . $time_passed[1] . " minuter och " . $time_passed[2] . " sekunder sedan det. \n");
                     } else {
-                        $time_difference = $giventime - $timenow - 7200;
+                        $time_difference = $giventime - $timenow - 7200; // 7200 = 2 timmar
 
                         $time_left = date("G i s", $time_difference);
                         $time_left = explode(" ", $time_left);
