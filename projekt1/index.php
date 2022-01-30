@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Back-end template</title>
+    <title>Backend Projekt 1</title>
     <link rel="stylesheet" href="../style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -11,40 +11,32 @@
 <body>
 
     <div id="container">
-        <!-- Max 800px bred container-->
-
-        <header>
-            <!-- Logo och meny i headern -->
-            <img src="../media/logo.svg" alt="Website logo" />
-            <div id="logo">DenApp</div>
-
-            <nav>
-                <!-- Huvudmenyn -->
-                <ul>
-                    <li><a href="../home/">Home</a></li>
-                    <li><a href="../projekt1/">Projekt 1</a></li>
-                    <li><a href="../projekt2/">Projekt 2</a></li>
-                    <li><a href="../rapport/">Rapport</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Logo och huvudmeny-->
+        <?php include "header.php" ?>
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
 
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
-                <h2>Uppgift 1</h2>
-                <p>Användardata</p>
-                <?php
-                    print(1 + 2);
-                ?>
+                <h2>Uppgift 1. Användardata</h2>
+                <p>
+                    
+                    <?php
+                        print("Hejsan " . $_SERVER["MELLON_displayName"] . "!<br>");
+                        print("Din offentliga IP adress är: " . $_SERVER["REMOTE_ADDR"] . "<br>");
+                        print("Serverns namn är: " . $_SERVER["SERVER_NAME"] . "<br>");
+                        print("Serverns IP adress är: " . $_SERVER["SERVER_ADDR"] . "<br>");
+                        print("Apache version: " . $_SERVER["SERVER_SOFTWARE"] . "<br>");
+                        print("PHP version: " . phpversion());
+                    ?>
+                </p>
             </article>
             <div class="separator"></div>
 
             <article>
-                <h2>Uppgift 2</h2>
-                <p>Tid och datum</p>
+                <h2>Uppgift 2. Tid och datum</h2>
+                <p></p>
             </article>
 
         </section>
