@@ -36,6 +36,9 @@
             <article>
                 <h2>Uppgift 1</h2>
                 <p>Användardata</p>
+                <?php
+                    print(1 + 2);
+                ?>
             </article>
             <div class="separator"></div>
 
