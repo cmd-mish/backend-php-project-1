@@ -24,6 +24,9 @@
         <!-- Användarinmatning -->
         <?php include "task3.php" ?>
 
+        <!-- Registeringsformulär -->
+        <?php include "task4.php" ?>
+
         <!-- Cookies -->
         <?php include "task5.php" ?>
 

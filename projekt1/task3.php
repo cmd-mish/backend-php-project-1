@@ -52,9 +52,7 @@
                 } else {
                     print("Invalid input!");
                 }
-            } else {
-                print("Flyll in alla fält i formuläret!");
-            }
+            } 
         ?>
     </p>
 </article>
