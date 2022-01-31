@@ -6,6 +6,7 @@
             Månad: <input size = "5" type = "text" name = "month"><br>
             År: <input size = "5" type = "text" name = "year"><br>
             <input type = "submit" name = "skicka" value = "Räkna">
+        </form>
     </p>
     <p>
         <?php
