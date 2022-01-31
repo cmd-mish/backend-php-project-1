@@ -1,3 +1,5 @@
+<!-- Funktioner-->
+<?php include "functions.php" ?>
 <!DOCTYPE html>
 
 <head>

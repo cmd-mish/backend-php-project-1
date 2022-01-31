@@ -9,7 +9,9 @@
                 print("Välkommen, " . $cookie_value . "!");
 
                 $first_visit_name = "first_visit";
-                $first_visit_value = " den " . $date . " " . $time; // Använder uppgift 2 för att få datumet
+                // Använder uppgift 2 för att få datumet
+                $first_visit_value = " den " . $date . " " . $time;
+                
                 setcookie($first_visit_name, $first_visit_value, time() + (86400 * 365), "/");
             } else {
                 print("Välkommen tillbaka, " . $_COOKIE["username"] . "!<br>");

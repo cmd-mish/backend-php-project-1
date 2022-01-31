@@ -18,13 +18,12 @@
                 if (($input_day > 0) && ($input_day <= 31) && 
                     ($input_month > 0) && ($input_month <= 12) &&
                     ($input_year > 0) && ($input_year <= 9999)) {
+                        
                     $timenow = time();
                     $giventime = mktime(0, 0, 0, $input_month, $input_day, $input_year);
 
                     $day_of_week = date("l", $giventime);
-
-                    // Använder uppgift 2 för att översätta veckodagsnamn till svenska
-                    $day_of_week = str_replace(array_keys($days), array_values($days), $day_of_week);
+                    $day_of_week = translate_day($day_of_week);
 
                     if ($timenow > $giventime) {
                         $time_difference = $timenow - $giventime - 7200; // 7200 = 2 timmar
