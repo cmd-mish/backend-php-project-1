@@ -11,9 +11,9 @@
     <p>
         <?php
             if (!empty($_GET["day"]) && !empty($_GET["month"]) && !empty($_GET["year"])) {
-                    $input_day = $_GET["day"];
-                    $input_month = $_GET["month"];
-                    $input_year = $_GET["year"];
+                    $input_day = test_input($_GET["day"]);
+                    $input_month = test_input($_GET["month"]);
+                    $input_year = test_input($_GET["year"]);
                 
                 if (($input_day > 0) && ($input_day <= 31) && 
                     ($input_month > 0) && ($input_month <= 12) &&
