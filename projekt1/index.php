@@ -17,29 +17,32 @@
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
-        <!-- Användardata -->
-        <?php include "task1.php" ?>
+            <!-- Användardata -->
+            <?php include "task1.php" ?>
 
-        <!-- Tid och datum -->
-        <?php include "task2.php" ?>
+            <!-- Tid och datum -->
+            <?php include "task2.php" ?>
 
-        <!-- Användarinmatning -->
-        <?php include "task3.php" ?>
+            <!-- Användarinmatning -->
+            <?php include "task3.php" ?>
 
-        <!-- Registeringsformulär -->
-        <?php include "task4.php" ?>
+            <!-- Registeringsformulär -->
+            <?php include "task4.php" ?>
 
-        <!-- Cookies -->
-        <?php include "task5.php" ?>
+            <!-- Cookies -->
+            <?php include "task5.php" ?>
 
-        <!-- Login -->
-        <?php include "task6.php" ?>
+            <!-- Login -->
+            <?php include "task6.php" ?>
 
-        <!-- Profilbild -->
-        <?php include "task7.php" ?>
+            <!-- Profilbild -->
+            <?php include "task7.php" ?>
 
-        <!-- Besöksräknare -->
-        <?php include "task8.php" ?>
+            <!-- Gästbok -->
+            <?php include "task8.php" ?>
+
+            <!-- Besöksräknare -->
+            <?php include "task9.php" ?>
 
         </section>
 
