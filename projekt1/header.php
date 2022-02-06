@@ -1,7 +1,7 @@
 <header>
     <!-- Logo och meny i headern -->
-    <img src="../media/logo.svg" alt="Website logo" />
-    <div id="logo">DenApp</div>
+    <img src="../media/php-icon.svg" alt="Website logo" />
+    <div id="logo">Backend</div>
 
     <nav>
         <!-- Huvudmenyn -->
