@@ -1,4 +1,7 @@
 <?php
+    //  Starta en session
+    session_start();
+
     function translate_day($day) {
         $days = array(
             "Monday" => "måndag", 
