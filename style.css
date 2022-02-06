@@ -56,6 +56,10 @@ article {
     padding-left: 10px;
 }
 
+.profile-pic {
+    max-width: 200px;
+}
+
 /* Footer */
 footer {
     background-color: #4f0076;

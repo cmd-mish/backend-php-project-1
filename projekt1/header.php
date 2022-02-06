@@ -10,8 +10,8 @@
             <li><a href="../projekt2/">Projekt 2</a></li>
             <li><a href="../rapport/">Rapport</a></li>
             <?php
-                if(isset($_SESSION["username"]) && (isset($_SESSION["email"]))) {
-                    print("<li><a href=\"../profile/\">Profil</a></li>");
+                if(isset($_SESSION["user"])) {
+                    print("<li><a href=\"./profile.php\">Profil</a></li>");
                 }
             ?>
         </ul>

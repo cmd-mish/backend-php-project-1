@@ -17,18 +17,20 @@
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
+            <article>
+                <h2>Besökshistorik</h2>
+                <p>
+                    <?php
+                        $log_file = fopen("visit_log.txt", "r") or die("Det gick inte att öppna visit_log filen!");
+                        
+                        while(!feof($log_file)) {
+                            print(fgets($log_file) . "<br>");
+                        }
 
-            <h2>Besökshistorik</h2>
-            <?php
-                $log_file = fopen("visit_log.txt", "r") or die("Det gick inte att öppna visit_log filen!");
-                
-                while(!feof($log_file)) {
-                    print(fgets($log_file) . "<br>");
-                }
-
-                fclose($log_file);
-            ?>
-
+                        fclose($log_file);
+                    ?>
+                </p>
+            </article>
         </section>
 
         <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->

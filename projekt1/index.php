@@ -35,6 +35,9 @@
         <!-- Login -->
         <?php include "task6.php" ?>
 
+        <!-- Profilbild -->
+        <?php include "task7.php" ?>
+
         <!-- Besöksräknare -->
         <?php include "task8.php" ?>
 

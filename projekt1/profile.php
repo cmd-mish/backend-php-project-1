@@ -18,7 +18,16 @@
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
 
-            <h2>Profilsidan</h2>
+            <?php
+                if(isset($_SESSION["user"])) {
+                    print("<h2>Hej, " . $_SESSION["user"] . "!</h2>");
+                    include "profile_pic.php";
+                } else {
+                    print("<br>Du måste logga in!");
+                }
+            ?>
+
+            
 
         </section>
 

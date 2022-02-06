@@ -8,8 +8,12 @@
         <?php
             if (!empty($_REQUEST["user"])) {
                 $_SESSION["user"] = test_input($_REQUEST["user"]);
-                print("Ditt användarman är: " . $_SESSION["user"] . "<br>");
+                print("Du har loggats in! Välkommen, " . $_SESSION["user"] . "!<br>");
                 header("Refresh:5; url=./profile.php");
+            }
+
+            if (isset($_SESSION["user"])) {
+                print("<br>Du är inloggat som " . $_SESSION["user"] . ". <a href=\"./profile.php\">Till profilsidan</a>");
             }
         ?>
     </p>
