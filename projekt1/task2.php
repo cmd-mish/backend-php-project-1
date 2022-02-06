@@ -8,7 +8,7 @@
             $date = date("d F Y");
             $date = translate_month($date);
 
-            $time = date("G:i");
+            $time = date("G:i:s");
             
             $week = date("W");
             $week = str_replace("0", "", $week);
