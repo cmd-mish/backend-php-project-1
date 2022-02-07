@@ -50,8 +50,12 @@ body {
     max-width: 800px;
     margin: auto;
     min-height: 100vh;
+}
+
+section {
     padding-bottom: 10px;
 }
+
 article {
     margin-bottom: 30px;
     padding-left: 10px;
