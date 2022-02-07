@@ -7,7 +7,7 @@
         <!-- Huvudmenyn -->
         <ul>
             <li><a href="../projekt1/">Projekt 1</a></li>
-            <li><a href="../projekt2/">Projekt 2</a></li>
+            <li>Projekt 2</li>
             <li><a href="../rapport/">Rapport</a></li>
             <?php
                 if(isset($_SESSION["user"])) {

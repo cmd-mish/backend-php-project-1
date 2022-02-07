@@ -1,3 +1,3 @@
 <footer>
-    Made by Misha
+    Back-end programmering 2022. popovmik@arcada.fi
 </footer>
