@@ -13,7 +13,7 @@
 
     <div id="container">
         <!-- Logo och huvudmeny-->
-        <?php include "header.php" ?>
+        <?php include "../elements/header.php" ?>
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
@@ -47,7 +47,7 @@
         </section>
 
         <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
-        <?php include "footer.php" ?>
+        <?php include "../elements/footer.php" ?>
 
     </div>
 </body>
