@@ -14,7 +14,7 @@
 
                 $password = generate_random_password();
 
-                print("Vi har skapat kontot " . $username . "! Lösenordet skickats till " . $email);
+                print("Vi har skapat kontot " . $username . "! Lösenordet skickas till e-postadressen " . $email);
 
                 mail($email, "Your password for " . $username, $password);
             }
