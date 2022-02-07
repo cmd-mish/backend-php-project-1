@@ -1,4 +1,4 @@
-<h2>Dina profilbilder</h2>
+<h3>Dina profilbilder</h3>
 <?php
     $folder = "profile_pics/";
     $content = scandir($folder);
@@ -17,7 +17,7 @@
     }
 ?>
 
-<h2>Byt profilbild</h2>
+<h3>Byt profilbild</h3>
 
 <form action="profile.php" method="post" enctype="multipart/form-data">
   Select image to upload:
